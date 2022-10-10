@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_back">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="190dp"
+        android:src="@drawable/kiwi_icon"
+        android:elevation="8dp"
+        android:outlineSpotShadowColor="#090909"
+        android:clickable="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KIWI"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="132dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="80dp"/>
+</LinearLayout>

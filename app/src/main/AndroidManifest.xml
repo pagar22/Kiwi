@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aaryanpagar.drawer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kiwi_icon"
+        android:label="Kiwi"
+        android:roundIcon="@drawable/kiwi_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Main.Splash"
+            android:label="Kiwi"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Reminders.OnNotificationClickRem"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
+        <activity
+            android:name=".Assignments.OnNotificationClickAss"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
+        <activity
+            android:name=".Tests.OnNotificantionClickTest"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
+        <activity android:name=".Notes.NotesEdit" />
+        <activity android:name=".Reminders.RemindersEdit" />
+        <activity android:name=".Classrooms.ClassSet" />
+        <activity android:name=".Assignments.SetAssignments" />
+        <activity android:name=".Assignments.Class1Assignment" />
+        <activity android:name=".Assignments.Class2Assignment" />
+        <activity android:name=".Assignments.Class3Assignment" />
+        <activity android:name=".Assignments.Class4Assignment" />
+        <activity android:name=".Assignments.Class5Assignment" />
+        <activity android:name=".Assignments.Class0Assignment" />
+        <activity android:name=".Tests.TestsSet" />
+        <activity android:name=".Tests.TestsBench"/>
+        <activity android:name=".Store.StoreMain"/>
+
+        <receiver android:name=".Main.NotificationBuilder" />
+    </application>
+
+</manifest>

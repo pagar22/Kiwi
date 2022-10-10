@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/testList" />
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:id="@+id/testText"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:textColor="#8F949B"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testFab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/add_tests"
+        android:backgroundTint="#AFD6E6" />
+</RelativeLayout>

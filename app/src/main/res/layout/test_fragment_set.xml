@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/testName"
+        android:layout_margin="10dp"
+        android:hint="Enter test subject..."
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="textCapSentences"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/testTopic"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:hint="Enter test topic..."
+        android:inputType="textCapSentences"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/testBench"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:hint="Enter test benchmark..."
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Enter test date..."
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:textSize="18dp">
+    </TextView>
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/testDate"
+        android:calendarTextColor="#AFD6E6"
+        android:layout_margin="20dp"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/testAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:text="Add"
+            android:textStyle="bold"
+            android:background="@drawable/button_color"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:id="@+id/testCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginLeft="230dp"
+            android:textStyle="bold"
+            android:background="@drawable/button_color"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+</LinearLayout>

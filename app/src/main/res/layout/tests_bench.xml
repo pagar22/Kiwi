@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/testBenchName"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/testBench"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter grades recieved..."
+        android:inputType="number"
+        android:textColorHint="@color/colorPrimary"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/testBenchDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_marginLeft="165dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_color"
+        android:textColor="#ffffff"
+        />
+
+
+</LinearLayout>
